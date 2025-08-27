@@ -1,13 +1,22 @@
-import React from 'react';
+import React from "react";
 
 export default function Header() {
   return (
-    <header className="bg-blue-900 text-white p-8 text-center">
-      <h1 className="text-4xl font-bold">Luminos</h1>
-      <p className="mt-2 text-lg">Award-winning Claims Management Platform</p>
-      <button className="mt-4 px-6 py-2 bg-yellow-400 text-black rounded-full font-semibold hover:bg-yellow-500">
-        Book a Demo
-      </button>
+    <header className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <h1 className="text-2xl font-bold text-indigo-700">Luminos</h1>
+        <nav className="space-x-6 text-gray-700 font-medium hidden md:flex">
+          <a href="#features" className="hover:text-indigo-600">Features</a>
+          <a href="#performance" className="hover:text-indigo-600">Performance</a>
+          <a href="#contact" className="hover:text-indigo-600">Contact</a>
+        </nav>
+        <a
+          href="#contact"
+          className="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700"
+        >
+          Book a Demo
+        </a>
+      </div>
     </header>
   );
 }
